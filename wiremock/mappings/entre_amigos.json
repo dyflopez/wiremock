@@ -1,0 +1,40 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "ANY",
+        "urlPath": "/api/entre-amigos",
+        "queryParameters": {
+          "accountId": {
+            "matches": ".*"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": "{\"message\":\"Mock response body\"}",
+        "fixedDelayMilliseconds": 900
+      },
+      "uuid": "8c5db8b0-2db4-4ad7-a99f-38c9b00da3f7"
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "/api/entre-amigos",
+        "headers": {
+          "Authorization": {
+            "equalTo": "Basic YWRtaW46cGFzc3dvcmQ="
+          }
+        },"bodyPatterns": [
+          {
+            "equalToJson" : { "total_results": 4 }
+          }
+        ]
+      },
+      "response": {
+        "status": 200,
+        "body": "{\"message\":\"Mock response body\"}"
+      }
+    }
+  ]
+}

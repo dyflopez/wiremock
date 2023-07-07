@@ -1,0 +1,30 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "/api/users"
+      },
+      "response": {
+        "status": 200,
+        "body": "[{\"id\":1, \"name\":\"daniel\"},{\"id\":2, \"name\":\"florez\"}]",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "/api/test"
+      },
+      "response": {
+        "status": 200,
+        "body": "[{\"id\":1, \"name\":\"diana\"},{\"id\":2, \"name\":\"suarez\"}]",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    }
+  ]
+}
